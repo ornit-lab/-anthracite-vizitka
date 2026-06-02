@@ -1,0 +1,92 @@
+
+    body {
+        font-family: 'Arial Black', Gadget, sans-serif; /* Основной жирный шрифт */
+        background-color: #1a1a2e;
+        color: #e0e0e0;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px;
+        padding: 40px;
+        background-color: #2e2e4e;
+        border-radius: 15px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        border: 1px solid #4a4a7e;
+    }
+
+    h1 {
+        font-family: 'Arial Black', Gadget, sans-serif;
+        font-size: 3.5em;
+        color: #8e44ad;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        letter-spacing: 3px;
+    }
+
+    /* Оранжевый неон */
+    .tagline {
+        color: #FF8C00; 
+        font-size: 1.3em;
+        margin-bottom: 30px;
+        text-shadow: 0 0 10px #FF4500, 0 0 20px #FF4500; /* Эффект свечения */
+    }
+
+    .section {
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: 1px dashed #FF0000;
+    }
+    .section:last-of-type { border-bottom: none; }
+
+    h2 {
+        color: #8e44ad;
+        text-transform: uppercase;
+        font-family: 'Arial Black', Gadget, sans-serif;
+    }
+
+    /* Кнопка: Розовая -> Оранжевая */
+    .btn {
+        display: inline-block;
+        background: linear-gradient(45deg, #FF69B4, #FFB6C1);
+        color: white;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 8px;
+        margin-top: 30px;
+        font-size: 1.2em;
+        font-weight: 900;
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.9); 
+    }
+    .btn:hover {
+        background: linear-gradient(45deg, #FF8C00, #FF4500);
+        transform: translateY(-3px);
+        box-shadow: 0 15px 20px rgba(255, 140, 0, 0.6);
+    }
+
+    .info-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+        font-size: 1.1em;
+    }
+    .info-item i { color: #FF0000; margin-right: 10px; }
+    
+    .social-links a { color: #FFD700; margin: 0 15px; font-size: 1.8em; transition: 0.3s; }
+    .social-links a:hover { color: #fff; }
+
+    @media (max-width: 600px) {
+        h1 { font-size: 2em; }
+        .tagline { font-size: 0.9em; }
+    }
+
+
